@@ -7,7 +7,7 @@ import './singlePost.scss'
  
  export default function SinglePost() {
      const { user } = useContext(Context)
-     const PF = "http://localhost:5000/images/"
+     const PF = "https://my-blog-app-backend.herokuapp.com/images/"
      const location = useLocation ()
      const path = location.pathname.split("/")[2];
      const [post, setPost] = useState({});
